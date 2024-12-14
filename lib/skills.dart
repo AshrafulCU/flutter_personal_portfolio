@@ -16,72 +16,76 @@ class Skills extends StatelessWidget {
             mainAxisAlignment:MainAxisAlignment.center,
             children: [
 
-              Container(
-                height: 100,
-                width: 100,
-                margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+              containerWidget("Java"),
+              containerWidget("XMS"),
+              containerWidget("Android")
 
-
-                decoration: BoxDecoration(
-                    color: Colors.orange,
-                  shape:BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(20),
-
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.orange.withOpacity(.5),
-                      blurRadius: 10,
-                      spreadRadius: 5
-                    )
-                  ]
-
-                ),
-                child: Center(child: Text('Java', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
-
-
-                decoration: BoxDecoration(
-                    color: Colors.orange,
-                    shape:BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(20),
-
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.orange.withOpacity(.5),
-                          blurRadius: 10,
-                          spreadRadius: 5
-                      )
-                    ]
-
-                ),
-                child: Center(child: Text('XMl', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
-
-
-                decoration: BoxDecoration(
-                    color: Colors.orange,
-                    shape:BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(20),
-
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.orange.withOpacity(.5),
-                          blurRadius: 10,
-                          spreadRadius: 5
-                      )
-                    ]
-
-                ),
-                child: Center(child: Text('Dart', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
-              ),
+              // Container(
+              //   height: 100,
+              //   width: 100,
+              //   margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+              //
+              //
+              //   decoration: BoxDecoration(
+              //       color: Colors.orange,
+              //     shape:BoxShape.rectangle,
+              //       borderRadius: BorderRadius.circular(20),
+              //
+              //     boxShadow: [
+              //       BoxShadow(
+              //         color: Colors.orange.withOpacity(.5),
+              //         blurRadius: 10,
+              //         spreadRadius: 5
+              //       )
+              //     ]
+              //
+              //   ),
+              //   child: Center(child: Text('Googe Ads', style: TextStyle(color: Colors.white,fontSize:16,fontWeight: FontWeight.bold ),)),
+              // ),
+              // Container(
+              //   height: 100,
+              //   width: 100,
+              //   margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+              //
+              //
+              //   decoration: BoxDecoration(
+              //       color: Colors.orange,
+              //       shape:BoxShape.rectangle,
+              //       borderRadius: BorderRadius.circular(20),
+              //
+              //       boxShadow: [
+              //         BoxShadow(
+              //             color: Colors.orange.withOpacity(.5),
+              //             blurRadius: 10,
+              //             spreadRadius: 5
+              //         )
+              //       ]
+              //
+              //   ),
+              //   child: Center(child: Text('XMl', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
+              // ),
+              // Container(
+              //   height: 100,
+              //   width: 100,
+              //   margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+              //
+              //
+              //   decoration: BoxDecoration(
+              //       color: Colors.orange,
+              //       shape:BoxShape.rectangle,
+              //       borderRadius: BorderRadius.circular(20),
+              //
+              //       boxShadow: [
+              //         BoxShadow(
+              //             color: Colors.orange.withOpacity(.5),
+              //             blurRadius: 10,
+              //             spreadRadius: 5
+              //         )
+              //       ]
+              //
+              //   ),
+              //   child: Center(child: Text('Dart', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
+              // ),
 
             ],
           ),
@@ -91,80 +95,197 @@ class Skills extends StatelessWidget {
             mainAxisAlignment:MainAxisAlignment.center,
             children: [
 
-              Container(
-                height: 100,
-                width: 100,
-                margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
 
 
-                decoration: BoxDecoration(
-                    color: Colors.orange,
-                    shape:BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(20),
+              containerWidget("WWW"),
+              containerWidget("UI"),
+              containerWidget("AAA"),
+              // Container(
+              //   height: 100,
+              //   width: 100,
+              //   margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+              //
+              //
+              //   decoration: BoxDecoration(
+              //       color: Colors.orange,
+              //       shape:BoxShape.rectangle,
+              //       borderRadius: BorderRadius.circular(20),
+              //
+              //       boxShadow: [
+              //         BoxShadow(
+              //             color: Colors.orange.withOpacity(.5),
+              //             blurRadius: 10,
+              //             spreadRadius: 5
+              //         )
+              //       ]
+              //
+              //   ),
+              //   child: Center(child: Text('FB Ads', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
+              // ),
+              // Container(
+              //   height: 100,
+              //   width: 100,
+              //   margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+              //
+              //
+              //   decoration: BoxDecoration(
+              //       color: Colors.orange,
+              //       shape:BoxShape.rectangle,
+              //       borderRadius: BorderRadius.circular(20),
+              //
+              //       boxShadow: [
+              //         BoxShadow(
+              //             color: Colors.orange.withOpacity(.5),
+              //             blurRadius: 10,
+              //             spreadRadius: 5
+              //         )
+              //       ]
+              //
+              //   ),
+              //   child: Center(child: Text('Power \n Point', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
+              // ),
+              // Center(
+              //   child: Container(
+              //     height: 100,
+              //     width: 100,
+              //     margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+              //
+              //
+              //     decoration: BoxDecoration(
+              //         color: Colors.orange,
+              //         shape:BoxShape.rectangle,
+              //         borderRadius: BorderRadius.circular(20),
+              //
+              //         boxShadow: [
+              //
+              //           BoxShadow(
+              //               color: Colors.orange.withOpacity(.5),
+              //               blurRadius: 10,
+              //               spreadRadius: 5
+              //           )
+              //         ]
+              //
+              //     ),
+              //     child:Center(child: Text('Google Ads', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
+              //   ),
+              // ),
 
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.orange.withOpacity(.5),
-                          blurRadius: 10,
-                          spreadRadius: 5
-                      )
-                    ]
 
-                ),
-                child: Center(child: Text('MS Word', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
-
-
-                decoration: BoxDecoration(
-                    color: Colors.orange,
-                    shape:BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(20),
-
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.orange.withOpacity(.5),
-                          blurRadius: 10,
-                          spreadRadius: 5
-                      )
-                    ]
-
-                ),
-                child: Center(child: Text('MS PowerPoint', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
-
-
-                decoration: BoxDecoration(
-                    color: Colors.orange,
-                    shape:BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(20),
-
-                    boxShadow: [
-
-                      BoxShadow(
-                          color: Colors.orange.withOpacity(.5),
-                          blurRadius: 10,
-                          spreadRadius: 5
-                      )
-                    ]
-
-                ),
-                child: Center(child: Text('MS Excel', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
-              ),
 
             ],
-          )
+          ),
+
+          // Second Row ********************************************************************
+          Row(
+            mainAxisAlignment:MainAxisAlignment.center,
+            children: [
+              //
+              // Container(
+              //   height: 100,
+              //   width: 100,
+              //   margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+              //
+              //
+              //   decoration: BoxDecoration(
+              //       color: Colors.orange,
+              //       shape:BoxShape.rectangle,
+              //       borderRadius: BorderRadius.circular(20),
+              //
+              //       boxShadow: [
+              //         BoxShadow(
+              //             color: Colors.orange.withOpacity(.5),
+              //             blurRadius: 10,
+              //             spreadRadius: 5
+              //         )
+              //       ]
+              //
+              //   ),
+              //   child: Center(child: Text('SPSS', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
+              // ),
+              // Container(
+              //   height: 100,
+              //   width: 100,
+              //   margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+              //
+              //
+              //   decoration: BoxDecoration(
+              //       color: Colors.orange,
+              //       shape:BoxShape.rectangle,
+              //       borderRadius: BorderRadius.circular(20),
+              //
+              //       boxShadow: [
+              //         BoxShadow(
+              //             color: Colors.orange.withOpacity(.5),
+              //             blurRadius: 10,
+              //             spreadRadius: 5
+              //         )
+              //       ]
+              //
+              //   ),
+              //   child: Center(child: Text('PowerPoint', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
+              // ),
+              // Container(
+              //   height: 100,
+              //   width: 100,
+              //   margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+              //
+              //
+              //   decoration: BoxDecoration(
+              //       color: Colors.orange,
+              //       shape:BoxShape.rectangle,
+              //       borderRadius: BorderRadius.circular(20),
+              //
+              //       boxShadow: [
+              //
+              //         BoxShadow(
+              //             color: Colors.orange.withOpacity(.5),
+              //             blurRadius: 10,
+              //             spreadRadius: 5
+              //         )
+              //       ]
+              //
+              //   ),
+              //   child: Center(child: Text('MS Excel', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
+              // ),
+              //
+
+              containerWidget("WWW"),
+              containerWidget("UI"),
+              containerWidget("AAA"),
+            ],
+          ),
 
         ],
             ),
       ),
+    );
+  }
+
+
+  //Reusabe widget
+  Widget containerWidget(String myText)
+  {
+    return  Container(
+      height: 100,
+      width: 100,
+      margin: EdgeInsets.fromLTRB(10, 10, 5, 5),
+
+
+      decoration: BoxDecoration(
+          color: Colors.orange,
+          shape:BoxShape.rectangle,
+          borderRadius: BorderRadius.circular(20),
+
+          boxShadow: [
+            BoxShadow(
+                color: Colors.orange.withOpacity(.5),
+                blurRadius: 10,
+                spreadRadius: 5
+            )
+          ]
+
+      ),
+      child: Center(child: Text(myText, style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
     );
   }
 }
