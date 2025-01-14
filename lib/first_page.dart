@@ -1,3 +1,4 @@
+import 'package:assignment/app.dart';
 import 'package:assignment/educational_Qualification.dart';
 import 'package:assignment/p_info.dart';
 import 'package:assignment/skills.dart';
@@ -13,6 +14,11 @@ class FirstPage extends StatelessWidget {
         title: Text("Assignment", style: TextStyle(color:Colors.white,fontWeight:FontWeight.bold, fontStyle:FontStyle.italic),),
         backgroundColor:Colors.orange,
         centerTitle: true,
+
+        leading: IconButton(onPressed:(){
+          Navigator.pop(context);//Make the back icon white
+
+       }, icon: Icon(Icons.arrow_back,color: Colors.white,)),
       ),
       body:Center(
 
@@ -75,6 +81,18 @@ class FirstPage extends StatelessWidget {
             }, child: Text('Skills', style:TextStyle(fontSize:15, fontStyle: FontStyle.italic,fontWeight: FontWeight.bold,color: Colors.deepOrange)),
               style: ElevatedButton.styleFrom(backgroundColor:Colors.white,shadowColor: Colors.black,elevation:8,
                 minimumSize:Size(200,40),
+                  shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(10))// Square shape
+
+              ),
+            ),
+
+            SizedBox(height: 10,),
+
+            ElevatedButton(onPressed:(){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> App()));
+            }, child: Text('App in PlayStore', style:TextStyle(fontSize:15, fontStyle: FontStyle.italic,fontWeight: FontWeight.bold,color: Colors.deepOrange)),
+              style: ElevatedButton.styleFrom(backgroundColor:Colors.white,shadowColor: Colors.black,elevation:8,
+                  minimumSize:Size(200,40),
                   shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(10))// Square shape
 
               ),

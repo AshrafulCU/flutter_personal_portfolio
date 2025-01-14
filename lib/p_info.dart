@@ -8,6 +8,10 @@ class PInfo extends StatelessWidget {
       appBar: AppBar (title: Text("Personal Information", style: TextStyle(color:Colors.white,fontWeight:FontWeight.bold, fontStyle:FontStyle.italic),),
         backgroundColor:Colors.orange,
         centerTitle: true,
+        leading: IconButton(onPressed:(){
+          Navigator.pop(context);//Make the back icon white
+
+        }, icon: Icon(Icons.arrow_back,color: Colors.white,)),
       ),
           body:Center(
             child: Column(

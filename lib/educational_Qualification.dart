@@ -8,6 +8,11 @@ class EducationalQualification extends StatelessWidget {
       appBar: AppBar(title: Text("Educational Qualification",style: TextStyle(color:Colors.white,fontWeight:FontWeight.bold, fontStyle:FontStyle.italic),),
         backgroundColor:Colors.orange,
         centerTitle: true,
+
+        leading: IconButton(onPressed:(){  //Make the back icon white
+          Navigator.pop(context);
+
+        }, icon: Icon(Icons.arrow_back,color: Colors.white,)),
       ),
           body:
             Column(

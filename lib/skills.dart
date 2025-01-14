@@ -1,3 +1,4 @@
+import 'package:assignment/first_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 class Skills extends StatelessWidget {
@@ -10,6 +11,12 @@ class Skills extends StatelessWidget {
         title: Text("Skills", style: TextStyle(color:Colors.white,fontWeight:FontWeight.bold, fontStyle:FontStyle.italic),),
         backgroundColor:Colors.orange,
         centerTitle: true,
+
+        leading: IconButton(onPressed:(){  
+          Navigator.pop(context);//Make the back icon white
+
+        }, icon: Icon(Icons.arrow_back,color: Colors.white,)),
+        //-------------------------------------------------------------------------
       ),body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
