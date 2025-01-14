@@ -7,6 +7,7 @@ class PInfo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar (title: Text("Personal Information", style: TextStyle(color:Colors.white,fontWeight:FontWeight.bold, fontStyle:FontStyle.italic),),
         backgroundColor:Colors.orange,
+        centerTitle: true,
       ),
           body:Center(
             child: Column(

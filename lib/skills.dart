@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 class Skills extends StatelessWidget {
   const Skills({super.key});
 
@@ -8,6 +9,7 @@ class Skills extends StatelessWidget {
       appBar: AppBar(
         title: Text("Skills", style: TextStyle(color:Colors.white,fontWeight:FontWeight.bold, fontStyle:FontStyle.italic),),
         backgroundColor:Colors.orange,
+        centerTitle: true,
       ),body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -17,7 +19,7 @@ class Skills extends StatelessWidget {
             children: [
 
               containerWidget("Java"),
-              containerWidget("XMS"),
+              containerWidget("Xml"),
               containerWidget("Android")
 
               // Container(
@@ -97,9 +99,12 @@ class Skills extends StatelessWidget {
 
 
 
-              containerWidget("WWW"),
-              containerWidget("UI"),
-              containerWidget("AAA"),
+              containerWidget("GoogleAds"),
+              containerWidget("FB Ads"),
+              containerWidget("SPSS",
+              
+              ),
+
               // Container(
               //   height: 100,
               //   width: 100,
@@ -247,11 +252,11 @@ class Skills extends StatelessWidget {
               //   ),
               //   child: Center(child: Text('MS Excel', style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
               // ),
-              //
+              //l
 
-              containerWidget("WWW"),
-              containerWidget("UI"),
-              containerWidget("AAA"),
+              containerWidget("MS Word"),
+              containerWidget("PowerPoint"),
+              containerWidget("Excel"),
             ],
           ),
 
@@ -285,7 +290,7 @@ class Skills extends StatelessWidget {
           ]
 
       ),
-      child: Center(child: Text(myText, style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.bold ),)),
+      child: Center(child: Text(myText, style: TextStyle(color: Colors.white,fontSize:15,fontWeight: FontWeight.bold ),)),
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:assignment/educational_Qualification.dart';
 import 'package:assignment/p_info.dart';
 import 'package:assignment/skills.dart';
 import 'package:flutter/cupertino.dart';
@@ -11,6 +12,7 @@ class FirstPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Assignment", style: TextStyle(color:Colors.white,fontWeight:FontWeight.bold, fontStyle:FontStyle.italic),),
         backgroundColor:Colors.orange,
+        centerTitle: true,
       ),
       body:Center(
 
@@ -50,9 +52,22 @@ class FirstPage extends StatelessWidget {
             }, child: Text('Personal Information',style:TextStyle(fontSize:15, fontStyle: FontStyle.italic,fontWeight: FontWeight.bold,color: Colors.deepOrange)),
               style: ElevatedButton.styleFrom(backgroundColor:Colors.white,shadowColor: Colors.black,elevation:8,
                 minimumSize:Size(200,40),
+                  shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(10))// Square shape
 
               ),
             ),
+            SizedBox(height: 10,),
+
+            ElevatedButton(onPressed:(){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> EducationalQualification()));
+            }, child: Text('Edu. Qualification', style:TextStyle(fontSize:15, fontStyle: FontStyle.italic,fontWeight: FontWeight.bold,color: Colors.deepOrange)),
+              style: ElevatedButton.styleFrom(backgroundColor:Colors.white,shadowColor: Colors.black,elevation:8,
+                  minimumSize:Size(200,40),
+                  shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(10))// Square shape
+
+              ),
+            ),
+
             SizedBox(height: 10,),
 
             ElevatedButton(onPressed:(){
@@ -60,9 +75,15 @@ class FirstPage extends StatelessWidget {
             }, child: Text('Skills', style:TextStyle(fontSize:15, fontStyle: FontStyle.italic,fontWeight: FontWeight.bold,color: Colors.deepOrange)),
               style: ElevatedButton.styleFrom(backgroundColor:Colors.white,shadowColor: Colors.black,elevation:8,
                 minimumSize:Size(200,40),
+                  shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(10))// Square shape
 
               ),
             ),
+
+
+
+
+
 
 
 
